@@ -136,7 +136,8 @@ function AdminPage() {
             <h3>Product List</h3>
             <button onClick={addHandler}>ADD PRODUCT</button>
           </div>
-          <table className='table mt-3'>
+          <div className='table-responsive'>
+          <table className='table mt-3' >
             <thead>
               <tr>
                 <th>Image</th>
@@ -162,7 +163,7 @@ function AdminPage() {
               })}
             </tbody>
           </table>
-
+          </div>
           <Modal show={show} onHide={handleClose}>
             <Modal.Header closeButton>
               <Modal.Title>{add === true ? 'Add a product' : 'Edit Product'}</Modal.Title>
